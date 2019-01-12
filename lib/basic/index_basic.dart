@@ -10,6 +10,7 @@ import 'raised_button_widget.dart';
 import 'scaffold_widget.dart';
 import 'app_bar_widget.dart';
 import 'flutter_logo_widget.dart';
+import 'placeholder_widget.dart';
 
 class IndexBasic extends StatefulWidget {
   @override
@@ -33,6 +34,7 @@ class _IndexBasicState extends State<IndexBasic> {
       {'title': 'Scaffold', 'page': ScaffoldWidget()},
       {'title': 'AppBar', 'page': AppBarWidget()},
       {'title': 'FlutterLogo', 'page': FlutterLogoWidget()},
+      {'title': 'Placeholder', 'page': PlaceholderWidget()},
     ];
   }
 
