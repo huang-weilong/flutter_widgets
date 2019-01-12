@@ -7,6 +7,7 @@ import 'image_widget.dart';
 import 'text_widget.dart';
 import 'icon_widget.dart';
 import 'raised_button_widget.dart';
+import 'scaffold_widget.dart';
 
 class IndexBasic extends StatefulWidget {
   @override
@@ -27,6 +28,7 @@ class _IndexBasicState extends State<IndexBasic> {
       {'title': 'Text', 'page': TextWidget()},
       {'title': 'Icon', 'page': IconWidget()},
       {'title': 'RaisedButton', 'page': RaisedButtonWidget()},
+      {'title': 'Scaffold', 'page': ScaffoldWidget()},
     ];
   }
 
