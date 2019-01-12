@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'container_widget.dart';
 import 'row_widget.dart';
+import 'column_widget.dart';
 
 class IndexBasic extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _IndexBasicState extends State<IndexBasic> {
     page = [
       {'title': 'Container', 'page': ContainerWidget()},
       {'title': 'Row', 'page': RowWidget()},
+      {'title': 'Column', 'page': ColumnWidget()},
     ];
   }
 
