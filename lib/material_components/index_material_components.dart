@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'app_structure/scaffold_widget.dart';
 import 'app_structure/app_bar_widget.dart';
 import 'app_structure/bottom_navigation_bar_widget.dart';
+import 'app_structure/tab_bar_widget1.dart';
+import 'app_structure/tab_bar_widget2.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -19,6 +21,8 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Scaffold', 'page': ScaffoldWidget()},
       {'title': 'AppBar', 'page': AppBarWidget()},
       {'title': 'BottomNavigationBar', 'page': BottomNavigationBarWidget()},
+      {'title': 'TabBar1', 'page': TabBarWidget1()},
+      {'title': 'TabBar2', 'page': TabBarWidget2()},
     ];
   }
 
