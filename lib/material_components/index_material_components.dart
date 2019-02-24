@@ -5,6 +5,7 @@ import 'app_structure/app_bar_widget.dart';
 import 'app_structure/bottom_navigation_bar_widget.dart';
 import 'app_structure/tab_bar_widget1.dart';
 import 'app_structure/tab_bar_widget2.dart';
+import 'app_structure/drawer_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -23,6 +24,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'BottomNavigationBar', 'page': BottomNavigationBarWidget()},
       {'title': 'TabBar1', 'page': TabBarWidget1()},
       {'title': 'TabBar2', 'page': TabBarWidget2()},
+      {'title': 'Drawer', 'page': DrawerWidget()},
     ];
   }
 
