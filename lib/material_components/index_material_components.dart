@@ -10,6 +10,7 @@ import 'app_structure/raised_button_widget.dart';
 import 'app_structure/floating_action_button_widget.dart';
 import 'app_structure/flat_button_widget.dart';
 import 'app_structure/icon_button_widget.dart';
+import 'app_structure/popup_menu_button_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -36,6 +37,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'FloatingActionButton', 'page': FloatingActionButtonWidget()},
       {'title': 'FlatButton', 'page': FlatButtonWidget()},
       {'title': 'IconButton', 'page': IconButtonWidget()},
+      {'title': 'PopupMenuButton', 'page': PopupMenuButtonWidget()},
     ];
   }
 
