@@ -12,6 +12,7 @@ import 'app_structure/flat_button_widget.dart';
 import 'app_structure/icon_button_widget.dart';
 import 'app_structure/popup_menu_button_widget.dart';
 import 'app_structure/button_bar_widget.dart';
+import 'app_structure/text_field_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -21,6 +22,7 @@ class IndexMaterialComponents extends StatefulWidget {
 class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
   List<Map> page1;
   List<Map> page2;
+  List<Map> page3;
 
   @override
   void initState() {
@@ -41,6 +43,9 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'PopupMenuButton', 'page': PopupMenuButtonWidget()},
       {'title': 'ButtonBar', 'page': ButtonBarWidget()},
     ];
+    page3 = [
+      {'title': 'TextField', 'page': TextFieldWidget()},
+    ];
   }
 
   Widget build(BuildContext context) {
@@ -52,38 +57,35 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       ),
       body: ListView(
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 4.0),
-            color: Color(0xffd3d3d3),
-            child: Text('App结构和导航'),
-          ),
-          Column(
-            children: page1.map((item) {
-              return ListTile(
-                title: Text(item['title']),
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => item['page']));
-                },
-              );
-            }).toList(),
-          ),
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 4.0),
-            color: Color(0xffd3d3d3),
-            child: Text('按钮'),
-          ),
-          Column(
-            children: page2.map((item) {
-              return ListTile(
-                title: Text(item['title']),
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => item['page']));
-                },
-              );
-            }).toList(),
-          ),
+          buildTitle('App结构和导航'),
+          buildColumnItem(page1),
+          buildTitle('按钮'),
+          buildColumnItem(page2),
+          buildTitle('输入框和选择框'),
+          buildColumnItem(page3),
         ],
       ),
+    );
+  }
+
+  Widget buildTitle(String title) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 4.0),
+      color: Color(0xffd3d3d3),
+      child: Text(title),
+    );
+  }
+
+  Widget buildColumnItem(List<Map> page) {
+    return Column(
+      children: page.map((item) {
+        return ListTile(
+          title: Text(item['title']),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) => item['page']));
+          },
+        );
+      }).toList(),
     );
   }
 }
