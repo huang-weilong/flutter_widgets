@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'basic/index_basic.dart';
+import 'material_components/index_material_components.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,6 +20,12 @@ class _HomePageState extends State<HomePage> {
         'description': '在构建您的第一个Flutter应用程序之前，您绝对需要了解这些widget。',
         'image': 'assets/images/1.jpg',
         'page': IndexBasic(),
+      },
+      {
+        'title': 'Material Components',
+        'description': '实现了Material Design 指南的视觉、效果、motion-rich的widget。',
+        'image': 'assets/images/2.jpg',
+        'page': IndexMaterialComponents(),
       }
     ];
   }
