@@ -21,6 +21,7 @@ import 'app_structure/show_date_picker_page.dart';
 import 'app_structure/simple_dialog_widget.dart';
 import 'app_structure/alert_dialog_widget.dart';
 import 'app_structure/show_modal_bottom_sheet_page.dart';
+import 'app_structure/expansion_panel_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -64,6 +65,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'SimpleDialog', 'page': SimpleDialogWidget()},
       {'title': 'AlertDialog', 'page': AlertDialogWidget()},
       {'title': 'showModalBottomSheet', 'page': ShowModalBottomSheetPage()},
+      {'title': 'ExpansionPanel', 'page': ExpansionPanelWidget()},
     ];
   }
 
