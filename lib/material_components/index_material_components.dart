@@ -18,6 +18,7 @@ import 'app_structure/radio_widget.dart';
 import 'app_structure/switch_widget.dart';
 import 'app_structure/slider_widget.dart';
 import 'app_structure/show_date_picker_page.dart';
+import 'app_structure/simple_dialog_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -28,6 +29,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
   List<Map> page1;
   List<Map> page2;
   List<Map> page3;
+  List<Map> page4;
 
   @override
   void initState() {
@@ -56,6 +58,9 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Slider', 'page': SliderWidget()},
       {'title': 'showDate(Time)Picker', 'page': ShowDatePickerPage()},
     ];
+    page4 = [
+      {'title': 'SimpleDialog', 'page': SimpleDialogWidget()},
+    ];
   }
 
   Widget build(BuildContext context) {
@@ -73,6 +78,8 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
           buildColumnItem(page2),
           buildTitle('输入框和选择框'),
           buildColumnItem(page3),
+          buildTitle('对话框、Alert、Panel'),
+          buildColumnItem(page4),
         ],
       ),
     );
