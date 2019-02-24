@@ -8,6 +8,7 @@ import 'app_structure/tab_bar_widget2.dart';
 import 'app_structure/drawer_widget.dart';
 import 'app_structure/raised_button_widget.dart';
 import 'app_structure/floating_action_button_widget.dart';
+import 'app_structure/flat_button_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -32,6 +33,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
     page2 = [
       {'title': 'RaisedButton', 'page': RaisedButtonWidget()},
       {'title': 'FloatingActionButton', 'page': FloatingActionButtonWidget()},
+      {'title': 'FlatButton', 'page': FlatButtonWidget()},
     ];
   }
 
