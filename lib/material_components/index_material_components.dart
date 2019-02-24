@@ -16,6 +16,7 @@ import 'app_structure/text_field_widget.dart';
 import 'app_structure/checkbox_widget.dart';
 import 'app_structure/radio_widget.dart';
 import 'app_structure/switch_widget.dart';
+import 'app_structure/slider_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -51,6 +52,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Checkbox', 'page': CheckboxWidget()},
       {'title': 'Radio', 'page': RadioWidget()},
       {'title': 'Switch', 'page': SwitchWidget()},
+      {'title': 'Slider', 'page': SliderWidget()},
     ];
   }
 
