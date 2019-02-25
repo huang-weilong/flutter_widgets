@@ -23,6 +23,7 @@ import 'dialog_alert_panel/alert_dialog_widget.dart';
 import 'dialog_alert_panel/bottom_sheet_widget.dart';
 import 'dialog_alert_panel/expansion_panel_widget.dart';
 import 'dialog_alert_panel/snack_bar_widget.dart';
+import 'information_display/image_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -34,6 +35,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
   List<Map> page2;
   List<Map> page3;
   List<Map> page4;
+  List<Map> page5;
 
   @override
   void initState() {
@@ -69,6 +71,9 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'ExpansionPanel', 'page': ExpansionPanelWidget()},
       {'title': 'SnackBar', 'page': SnackBarWidget()},
     ];
+    page5 = [
+      {'title': 'Image', 'page': ImageWidget()},
+    ];
   }
 
   Widget build(BuildContext context) {
@@ -88,6 +93,8 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
           buildColumnItem(page3),
           buildTitle('对话框、Alert、Panel'),
           buildColumnItem(page4),
+          buildTitle('信息展示'),
+          buildColumnItem(page5),
         ],
       ),
     );
