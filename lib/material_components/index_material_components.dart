@@ -26,6 +26,7 @@ import 'dialog_alert_panel/snack_bar_widget.dart';
 import 'information_display/image_widget.dart';
 import 'information_display/icon_widget.dart';
 import 'information_display/chip_widget.dart';
+import 'information_display/tooltip_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -77,6 +78,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Image', 'page': ImageWidget()},
       {'title': 'Icon', 'page': IconWidget()},
       {'title': 'Chip', 'page': ChipWidget()},
+      {'title': 'Tooltip', 'page': TooltipWidget()},
     ];
   }
 
