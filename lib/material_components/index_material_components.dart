@@ -28,6 +28,7 @@ import 'information_display/icon_widget.dart';
 import 'information_display/chip_widget.dart';
 import 'information_display/tooltip_widget.dart';
 import 'information_display/data_table_widget.dart';
+import 'information_display/card_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -81,6 +82,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Chip', 'page': ChipWidget()},
       {'title': 'Tooltip', 'page': TooltipWidget()},
       {'title': 'DataTable（尚未完善）', 'page': DataTableWidget(), 'finish': false},
+      {'title': 'Card', 'page': CardWidget()},
     ];
   }
 
