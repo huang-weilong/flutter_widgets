@@ -27,6 +27,7 @@ import 'information_display/image_widget.dart';
 import 'information_display/icon_widget.dart';
 import 'information_display/chip_widget.dart';
 import 'information_display/tooltip_widget.dart';
+import 'information_display/data_table_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -79,6 +80,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Icon', 'page': IconWidget()},
       {'title': 'Chip', 'page': ChipWidget()},
       {'title': 'Tooltip', 'page': TooltipWidget()},
+      {'title': 'DataTable（尚未完善）', 'page': DataTableWidget(), 'finish': false},
     ];
   }
 
@@ -118,7 +120,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
     return Column(
       children: page.map((item) {
         return ListTile(
-          title: Text(item['title']),
+          title: Text(item['title'], style: TextStyle(color: item['finish'] == null ? Colors.black : Colors.red)),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (_) => item['page']));
           },
