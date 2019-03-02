@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'cupertino_activity_indicator_widget.dart';
+import 'cupertino_alert_dialog_widget.dart';
 
 class IndexCupertino extends StatefulWidget {
   @override
@@ -15,6 +16,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
     super.initState();
     page = [
       {'title': 'CupertinoActivityIndicator', 'page': CupertinoActivityIndicatorWidget()},
+      {'title': 'CupertinoAlertDialog', 'page': CupertinoAlertDialogWidget()},
     ];
   }
 
