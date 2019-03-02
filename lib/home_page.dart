@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'basic/index_basic.dart';
 import 'material_components/index_material_components.dart';
+import 'cupertino/index_cupertino.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -26,6 +27,12 @@ class _HomePageState extends State<HomePage> {
         'description': '实现了Material Design 指南的视觉、效果、motion-rich的widget。',
         'image': 'assets/images/2.jpg',
         'page': IndexMaterialComponents(),
+      },
+      {
+        'title': 'Cupertino (iOS风格) Widgets',
+        'description': '用于当前iOS设计语言的美丽和高保真widget。',
+        'image': 'assets/images/3.jpg',
+        'page': IndexCupertino(),
       }
     ];
   }
