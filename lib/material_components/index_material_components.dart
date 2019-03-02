@@ -32,6 +32,7 @@ import 'information_display/card_widget.dart';
 import 'information_display/linear_progress_indicator_widget.dart';
 import 'layout/list_tile_widget.dart';
 import 'layout/stepper_widget.dart';
+import 'layout/divider_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -92,6 +93,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
     page6 = [
       {'title': 'ListTile', 'page': ListTileWidget()},
       {'title': 'Stepper', 'page': StepperWidget()},
+      {'title': 'Divider', 'page': DividerWidget()},
     ];
   }
 
