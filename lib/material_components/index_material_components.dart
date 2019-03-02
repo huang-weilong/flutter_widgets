@@ -30,6 +30,7 @@ import 'information_display/tooltip_widget.dart';
 import 'information_display/data_table_widget.dart';
 import 'information_display/card_widget.dart';
 import 'information_display/linear_progress_indicator_widget.dart';
+import 'layout/list_tile_widget.dart';
 
 class IndexMaterialComponents extends StatefulWidget {
   @override
@@ -42,6 +43,7 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
   List<Map> page3;
   List<Map> page4;
   List<Map> page5;
+  List<Map> page6;
 
   @override
   void initState() {
@@ -86,6 +88,9 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
       {'title': 'Card', 'page': CardWidget()},
       {'title': 'LinearProgressIndicator', 'page': LinearProgressIndicatorWidget()},
     ];
+    page6 = [
+      {'title': 'ListTile', 'page': ListTileWidget()},
+    ];
   }
 
   Widget build(BuildContext context) {
@@ -107,6 +112,8 @@ class _IndexMaterialComponentsState extends State<IndexMaterialComponents> {
           buildColumnItem(page4),
           buildTitle('信息展示'),
           buildColumnItem(page5),
+          buildTitle('布局'),
+          buildColumnItem(page6),
         ],
       ),
     );
