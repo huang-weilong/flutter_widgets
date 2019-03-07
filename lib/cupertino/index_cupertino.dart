@@ -8,6 +8,7 @@ import 'cupertino_dialog_action_widget.dart';
 import 'cupertino_slider_widget.dart';
 import 'cupertino_switch_widget.dart';
 import 'cupertino_page_transition_widget.dart';
+import 'cupertino_fullscreen_dialog_transition_widget.dart';
 import 'cupertino_navigation_bar_widget.dart';
 
 class IndexCupertino extends StatefulWidget {
@@ -30,6 +31,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
       {'title': 'CupertinoSlider', 'page': CupertinoSliderWidget()},
       {'title': 'CupertinoSwitch', 'page': CupertinoSwitchWidget()},
       {'title': 'CupertinoPageTransition', 'page': CupertinoPageTransitionWidget(), 'finish': false},
+      {'title': 'CupertinoFullscreenDialogTransition', 'page': CupertinoFullscreenDialogTransitionWidget(), 'finish': false},
       {'title': 'CupertinoNavigationBar', 'page': CupertinoNavigationBarWidget()},
     ];
   }
