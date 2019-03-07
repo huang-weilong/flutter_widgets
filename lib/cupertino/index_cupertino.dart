@@ -7,6 +7,7 @@ import 'cupertino_dialog_widget.dart';
 import 'cupertino_dialog_action_widget.dart';
 import 'cupertino_slider_widget.dart';
 import 'cupertino_switch_widget.dart';
+import 'cupertino_page_transition_widget.dart';
 import 'cupertino_navigation_bar_widget.dart';
 
 class IndexCupertino extends StatefulWidget {
@@ -28,6 +29,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
       {'title': 'CupertinoDialogAction', 'page': CupertinoDialogActionWidget()},
       {'title': 'CupertinoSlider', 'page': CupertinoSliderWidget()},
       {'title': 'CupertinoSwitch', 'page': CupertinoSwitchWidget()},
+      {'title': 'CupertinoPageTransition', 'page': CupertinoPageTransitionWidget(), 'finish': false},
       {'title': 'CupertinoNavigationBar', 'page': CupertinoNavigationBarWidget()},
     ];
   }
@@ -43,7 +45,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
       body: ListView(
         children: page.map((item) {
           return ListTile(
-            title: Text(item['title']),
+            title: Text(item['title'], style: TextStyle(color: item['finish'] == null ? Colors.black : Colors.red)),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (_) => item['page']));
             },
