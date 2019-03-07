@@ -12,6 +12,7 @@ import 'cupertino_fullscreen_dialog_transition_widget.dart';
 import 'cupertino_navigation_bar_widget.dart';
 import 'cupertino_tab_bar_widget.dart';
 import 'cupertino_page_scaffold_widget.dart';
+import 'cupertino_tab_scaffold_widget.dart';
 
 class IndexCupertino extends StatefulWidget {
   @override
@@ -37,6 +38,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
       {'title': 'CupertinoNavigationBar', 'page': CupertinoNavigationBarWidget()},
       {'title': 'CupertinoTabBar', 'page': CupertinoTabBarWidget()},
       {'title': 'CupertinoPageScaffold', 'page': CupertinoPageScaffoldWidget()},
+      {'title': 'CupertinoTabScaffold', 'page': CupertinoTabScaffoldWidget()},
     ];
   }
 
