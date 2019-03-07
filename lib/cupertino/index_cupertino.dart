@@ -7,6 +7,7 @@ import 'cupertino_dialog_widget.dart';
 import 'cupertino_dialog_action_widget.dart';
 import 'cupertino_slider_widget.dart';
 import 'cupertino_switch_widget.dart';
+import 'cupertino_navigation_bar_widget.dart';
 
 class IndexCupertino extends StatefulWidget {
   @override
@@ -27,6 +28,7 @@ class _IndexCupertinoState extends State<IndexCupertino> {
       {'title': 'CupertinoDialogAction', 'page': CupertinoDialogActionWidget()},
       {'title': 'CupertinoSlider', 'page': CupertinoSliderWidget()},
       {'title': 'CupertinoSwitch', 'page': CupertinoSwitchWidget()},
+      {'title': 'CupertinoNavigationBar', 'page': CupertinoNavigationBarWidget()},
     ];
   }
 
