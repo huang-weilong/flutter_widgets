@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/layout/single_child_layout_widget/container_widget.dart';
+import 'single_child_layout_widget/container_widget.dart';
+import 'single_child_layout_widget/padding_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -14,6 +15,7 @@ class _IndexLayoutState extends State<IndexLayout> {
     super.initState();
     page1 = [
       {'title': 'Container', 'page': ContainerWidget()},
+      {'title': 'Padding', 'page': PaddingWidget()},
     ];
   }
 
