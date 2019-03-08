@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'basic/index_basic.dart';
 import 'material_components/index_material_components.dart';
 import 'cupertino/index_cupertino.dart';
+import 'layout/index_layout.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -33,6 +34,12 @@ class _HomePageState extends State<HomePage> {
         'description': '用于当前iOS设计语言的美丽和高保真widget。',
         'image': 'assets/images/3.jpg',
         'page': IndexCupertino(),
+      },
+      {
+        'title': 'Layout',
+        'description': '排列其它widget的columns、rows、grids和其它的layouts。',
+        'image': 'assets/images/4.jpg',
+        'page': IndexLayout(),
       }
     ];
   }
