@@ -5,6 +5,7 @@ import 'single_child_layout_widget/center_widget.dart';
 import 'single_child_layout_widget/align_widget.dart';
 import 'single_child_layout_widget/fitted_box_widget.dart';
 import 'single_child_layout_widget/aspect_ratio_widget.dart';
+import 'single_child_layout_widget/constrained_box_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -24,6 +25,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'Align', 'page': AlignWidget()},
       {'title': 'FittedBox', 'page': FittedBoxWidget()},
       {'title': 'AspectRatio', 'page': AspectRatioWidget()},
+      {'title': 'ConstrainedBox', 'page': ConstrainedBoxWidget()},
     ];
   }
 
