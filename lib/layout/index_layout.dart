@@ -10,6 +10,7 @@ import 'single_child_layout_widget/baseline_widget.dart';
 import 'single_child_layout_widget/fractionally_sized_box_widget.dart';
 import 'single_child_layout_widget/intrinsic_height_widget.dart';
 import 'single_child_layout_widget/intrinsic_width_widget.dart';
+import 'single_child_layout_widget/limited_box_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -34,6 +35,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'FractionallySizedBox', 'page': FractionallySizedBoxWidget()},
       {'title': 'IntrinsicHeight', 'page': IntrinsicHeightWidget()},
       {'title': 'IntrinsicWidth', 'page': IntrinsicWidthWidget()},
+      {'title': 'LimitedBox', 'page': LimitedBoxWidget()},
     ];
   }
 
