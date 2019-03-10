@@ -13,6 +13,7 @@ import 'single_child_layout_widget/intrinsic_width_widget.dart';
 import 'single_child_layout_widget/limited_box_widget.dart';
 import 'single_child_layout_widget/offstage_widget.dart';
 import 'single_child_layout_widget/overflow_box_widget.dart';
+import 'single_child_layout_widget/sized_box_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -40,6 +41,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'LimitedBox', 'page': LimitedBoxWidget()},
       {'title': 'Offstage', 'page': OffstageWidget()},
       {'title': 'OverflowBox', 'page': OverflowBoxWidget()},
+      {'title': 'SizedBox', 'page': SizedBoxWidget()},
     ];
   }
 
