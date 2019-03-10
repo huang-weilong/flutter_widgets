@@ -16,6 +16,7 @@ import 'single_child_layout_widget/overflow_box_widget.dart';
 import 'single_child_layout_widget/sized_box_widget.dart';
 import 'single_child_layout_widget/sized_overflow_box_widget.dart';
 import 'single_child_layout_widget/transform_widget.dart';
+import 'single_child_layout_widget/custom_single_child_layout_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -44,8 +45,9 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'Offstage', 'page': OffstageWidget()},
       {'title': 'OverflowBox', 'page': OverflowBoxWidget()},
       {'title': 'SizedBox', 'page': SizedBoxWidget()},
-      {'title': 'SizedOverflowBox', 'page': SizedOverflowBoxWidget()},
+      {'title': 'SizedOverflowBox', 'page': SizedOverflowBoxWidget(), 'finish': false},
       {'title': 'Transform', 'page': TransformWidget()},
+      {'title': 'CustomSingleChildLayout', 'page': CustomSingleChildLayoutWidget(), 'finish': false},
     ];
   }
 
