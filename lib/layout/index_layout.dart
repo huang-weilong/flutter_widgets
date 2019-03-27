@@ -21,6 +21,7 @@ import 'single_child_layout_widget/custom_single_child_layout_widget.dart';
 import 'multi_child_layout_widget/row_widget.dart';
 import 'multi_child_layout_widget/column_widget.dart';
 import 'multi_child_layout_widget/stack_widget.dart';
+import 'multi_child_layout_widget/indexed_stack_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -58,6 +59,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'Row', 'page': RowWidget()},
       {'title': 'Column', 'page': ColumnWidget()},
       {'title': 'Stack', 'page': StackWidget()},
+      {'title': 'IndexedStack', 'page': IndexedStackWidget()},
     ];
   }
 
