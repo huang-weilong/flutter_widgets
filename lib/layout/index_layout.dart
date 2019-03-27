@@ -18,6 +18,8 @@ import 'single_child_layout_widget/sized_overflow_box_widget.dart';
 import 'single_child_layout_widget/transform_widget.dart';
 import 'single_child_layout_widget/custom_single_child_layout_widget.dart';
 
+import 'multi_child_layout_widget/row_widget.dart';
+
 class IndexLayout extends StatefulWidget {
   @override
   _IndexLayoutState createState() => _IndexLayoutState();
@@ -25,6 +27,7 @@ class IndexLayout extends StatefulWidget {
 
 class _IndexLayoutState extends State<IndexLayout> {
   List<Map> page1;
+  List<Map> page2;
 
   @override
   void initState() {
@@ -49,6 +52,9 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'Transform', 'page': TransformWidget()},
       {'title': 'CustomSingleChildLayout', 'page': CustomSingleChildLayoutWidget(), 'finish': false},
     ];
+    page2 = [
+      {'title': 'Row', 'page': RowWidget()},
+    ];
   }
 
   @override
@@ -62,6 +68,8 @@ class _IndexLayoutState extends State<IndexLayout> {
       body: ListView(children: <Widget>[
         buildTitle('拥有单个子元素的布局widget'),
         buildColumnItem(page1),
+        buildTitle('拥有多个子元素的布局widget'),
+        buildColumnItem(page2),
       ]),
     );
   }
