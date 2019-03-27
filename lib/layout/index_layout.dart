@@ -19,6 +19,7 @@ import 'single_child_layout_widget/transform_widget.dart';
 import 'single_child_layout_widget/custom_single_child_layout_widget.dart';
 
 import 'multi_child_layout_widget/row_widget.dart';
+import 'multi_child_layout_widget/column_widget.dart';
 
 class IndexLayout extends StatefulWidget {
   @override
@@ -54,6 +55,7 @@ class _IndexLayoutState extends State<IndexLayout> {
     ];
     page2 = [
       {'title': 'Row', 'page': RowWidget()},
+      {'title': 'Column', 'page': ColumnWidget()},
     ];
   }
 
