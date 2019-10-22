@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/layout/multi_child_layout_widget/custom_multi_child_layout_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/list_body_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/list_view_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/wrap_widget.dart';
@@ -70,6 +71,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'Wrap', 'page': WrapWidget()},
       {'title': 'ListBody', 'page': ListBodyWidget()},
       {'title': 'ListView', 'page': ListViewWidget()},
+      {'title': 'CustomMultiChildLayout', 'page': CustomMultiChildLayoutWidget()},
     ];
   }
 
