@@ -24,6 +24,13 @@ class _RichTextWidgetState extends State<RichTextWidget> {
         ),
       ),
       body: RichText(
+        // 行样式
+        // 在StrutStyle中指定的fontSize、fontWeight、fontStyle
+        // 仅仅作为StrutStyle计算行高、行间距的标准，并不会应用到文本上
+        strutStyle: StrutStyle(
+          height: 2.0, // 行样式
+          leading: 1.0, // 行间距
+        ),
         text: TextSpan(
           text: 'RichText',
           style: TextStyle(color: Colors.black),
@@ -41,7 +48,7 @@ class _RichTextWidgetState extends State<RichTextWidget> {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             TextSpan(
-              text: '斜体',
+              text: '斜体\n',
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
             TextSpan(
