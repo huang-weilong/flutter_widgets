@@ -59,7 +59,7 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'SizedBox', 'page': SizedBoxWidget()},
       {'title': 'SizedOverflowBox', 'page': SizedOverflowBoxWidget(), 'finish': false},
       {'title': 'Transform', 'page': TransformWidget()},
-      {'title': 'CustomSingleChildLayout', 'page': CustomSingleChildLayoutWidget(), 'finish': false},
+      {'title': 'CustomSingleChildLayout', 'page': CustomSingleChildLayoutWidget()},
     ];
     page2 = [
       {'title': 'Row', 'page': RowWidget()},
