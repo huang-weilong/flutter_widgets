@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/layout/layout_helpers/layout_builder_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/custom_multi_child_layout_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/list_body_widget.dart';
 import 'package:flutter_widgets/layout/multi_child_layout_widget/list_view_widget.dart';
@@ -37,6 +38,7 @@ class IndexLayout extends StatefulWidget {
 class _IndexLayoutState extends State<IndexLayout> {
   List<Map> page1;
   List<Map> page2;
+  List<Map> page3;
 
   @override
   void initState() {
@@ -73,6 +75,9 @@ class _IndexLayoutState extends State<IndexLayout> {
       {'title': 'ListView', 'page': ListViewWidget()},
       {'title': 'CustomMultiChildLayout', 'page': CustomMultiChildLayoutWidget()},
     ];
+    page3 = [
+      {'title': 'LayoutBuilder', 'page': LayoutBuilderWidget()},
+    ];
   }
 
   @override
@@ -88,6 +93,8 @@ class _IndexLayoutState extends State<IndexLayout> {
         buildColumnItem(page1),
         buildTitle('拥有多个子元素的布局widget'),
         buildColumnItem(page2),
+        buildTitle('Layout helpers'),
+        buildColumnItem(page3),
       ]),
     );
   }
