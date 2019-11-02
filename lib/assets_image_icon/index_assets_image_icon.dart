@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/assets_image_icon/icon_widget.dart';
 import 'package:flutter_widgets/assets_image_icon/image_widget.dart';
 
 class IndexAssetsImageIcon extends StatefulWidget {
@@ -14,6 +15,7 @@ class _IndexAssetsImageIconState extends State<IndexAssetsImageIcon> {
     super.initState();
     page = [
       {'title': 'Image', 'page': ImageWidget()},
+      {'title': 'Icon', 'page': IconWidget()},
     ];
   }
 
