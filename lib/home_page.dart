@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/text/index_text.dart';
 
 import 'basic/index_basic.dart';
 import 'material_components/index_material_components.dart';
@@ -40,7 +41,13 @@ class _HomePageState extends State<HomePage> {
         'description': '排列其它widget的columns、rows、grids和其它的layouts。',
         'image': 'assets/images/4.jpg',
         'page': IndexLayout(),
-      }
+      },
+      {
+        'title': 'Text',
+        'description': '文本显示和样式',
+        'image': 'assets/images/5.jpg',
+        'page': IndexText(),
+      },
     ];
   }
 
