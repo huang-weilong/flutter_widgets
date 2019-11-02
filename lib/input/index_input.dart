@@ -23,7 +23,7 @@ class _IndexInputState extends State<IndexInput> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Layout'),
+        title: Text('表单 Widgets'),
         centerTitle: true,
         elevation: 0.0,
       ),
