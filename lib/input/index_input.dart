@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/text/default_text_style_widget.dart';
-import 'package:flutter_widgets/text/rich_text_widget.dart';
-import 'package:flutter_widgets/text/text_widget.dart';
+import 'package:flutter_widgets/input/form_widget.dart';
 
-class IndexText extends StatefulWidget {
+class IndexInput extends StatefulWidget {
   @override
-  _IndexTextState createState() => _IndexTextState();
+  _IndexInputState createState() => _IndexInputState();
 }
 
-class _IndexTextState extends State<IndexText> {
+class _IndexInputState extends State<IndexInput> {
   List<Map> page;
 
   @override
   void initState() {
     super.initState();
     page = [
-      {'title': 'Text', 'page': TextWidget()},
-      {'title': 'RichText', 'page': RichTextWidget()},
-      {'title': 'DefaultTextStyle', 'page': DefaultTextStyleWidget()},
+      {'title': 'Form', 'page': FormWidget()},
     ];
   }
 
@@ -25,7 +21,7 @@ class _IndexTextState extends State<IndexText> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text'),
+        title: Text('Layout'),
         centerTitle: true,
         elevation: 0.0,
       ),

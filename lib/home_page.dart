@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/assets_image_icon/index_assets_image_icon.dart';
+import 'package:flutter_widgets/input/index_input.dart';
 import 'package:flutter_widgets/text/index_text.dart';
 
 import 'basic/index_basic.dart';
@@ -54,6 +55,12 @@ class _HomePageState extends State<HomePage> {
         'description': '管理assets, 显示图片和Icon',
         'image': 'assets/images/6.jpg',
         'page': IndexAssetsImageIcon(),
+      },
+      {
+        'title': '表单 Widgets',
+        'description': '获取用户输入的widget',
+        'image': 'assets/images/7.jpg',
+        'page': IndexInput(),
       },
     ];
   }
