@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/text/default_text_style_widget.dart';
 import 'package:flutter_widgets/text/rich_text_widget.dart';
 import 'package:flutter_widgets/text/text_widget.dart';
 
@@ -16,6 +17,7 @@ class _IndexTextState extends State<IndexText> {
     page = [
       {'title': 'Text', 'page': TextWidget()},
       {'title': 'RichText', 'page': RichTextWidget()},
+      {'title': 'DefaultTextStyle', 'page': DefaultTextStyleWidget()},
     ];
   }
 
