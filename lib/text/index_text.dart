@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/text/rich_text_widget.dart';
 import 'package:flutter_widgets/text/text_widget.dart';
 
 class IndexText extends StatefulWidget {
@@ -14,6 +15,7 @@ class _IndexTextState extends State<IndexText> {
     super.initState();
     page = [
       {'title': 'Text', 'page': TextWidget()},
+      {'title': 'RichText', 'page': RichTextWidget()},
     ];
   }
 
