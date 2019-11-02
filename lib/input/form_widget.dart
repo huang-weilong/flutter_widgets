@@ -30,12 +30,13 @@ class _FormWidgetState extends State<FormWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('请输入123'),
+            Text('请输入一个电话号码'),
             TextFormField(
               controller: controller,
               validator: (value) {
-                if (value.isEmpty) {
-                  return '请输入';
+                RegExp reg = new RegExp(r'^\d{11}$');
+                if (!reg.hasMatch(value)) {
+                  return '请输入11位手机号码';
                 }
                 return null;
               },
@@ -44,15 +45,13 @@ class _FormWidgetState extends State<FormWidget> {
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: RaisedButton(
                 onPressed: () {
-                  if (_formKey.currentState.validate()) {
-                    setState(() {
-                      if (controller.text == '123') {
-                        text = '输入正确';
-                      } else {
-                        text = '输入错误';
-                      }
-                    });
-                  }
+                  setState(() {
+                    if (_formKey.currentState.validate()) {
+                      text = '输入正确';
+                    } else {
+                      text = '输入错误';
+                    }
+                  });
                 },
                 child: Text('Submit'),
               ),
