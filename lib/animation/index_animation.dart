@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/animation/animated_builder_widget.dart';
 import 'package:flutter_widgets/animation/animated_container_widget.dart';
 import 'package:flutter_widgets/animation/animated_cross_fade_widget.dart';
 import 'package:flutter_widgets/animation/hero_widget.dart';
@@ -18,6 +19,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'AnimatedContainer', 'page': AnimatedContainerWidget()},
       {'title': 'AnimatedCrossFade', 'page': AnimatedCrossFadeWidget()},
       {'title': 'Hero', 'page': HeroWidget()},
+      {'title': 'AnimatedBuilder', 'page': AnimatedBuilderWidget()},
     ];
   }
 
