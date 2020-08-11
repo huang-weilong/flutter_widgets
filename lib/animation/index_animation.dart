@@ -5,6 +5,7 @@ import 'package:flutter_widgets/animation/animated_cross_fade_widget.dart';
 import 'package:flutter_widgets/animation/decorated_box_transition_widget.dart';
 import 'package:flutter_widgets/animation/fade_transition_widget.dart';
 import 'package:flutter_widgets/animation/hero_widget.dart';
+import 'package:flutter_widgets/animation/positioned_transition_widget.dart';
 
 class IndexAnimation extends StatefulWidget {
   @override
@@ -24,6 +25,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'AnimatedBuilder', 'page': AnimatedBuilderWidget()},
       {'title': 'DecoratedBoxTransition', 'page': DecoratedBoxTransitionWidget()},
       {'title': 'FadeTransition', 'page': FadeTransitionWidget()},
+      {'title': 'PositionedTransition', 'page': PositionedTransitionWidget()},
     ];
   }
 
