@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/animation/index_animation.dart';
 import 'package:flutter_widgets/assets_image_icon/index_assets_image_icon.dart';
 import 'package:flutter_widgets/input/index_input.dart';
 import 'package:flutter_widgets/text/index_text.dart';
@@ -61,6 +62,12 @@ class _HomePageState extends State<HomePage> {
         'description': '获取用户输入的widget',
         'image': 'assets/images/7.jpg',
         'page': IndexInput(),
+      },
+      {
+        'title': '动画和Motion',
+        'description': '在您的应用中使用动画',
+        'image': 'assets/images/8.jpg',
+        'page': IndexAnimation(),
       },
     ];
   }
