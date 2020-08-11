@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/animation/animated_container_widget.dart';
+import 'package:flutter_widgets/animation/animated_cross_fade_widget.dart';
 
 class IndexAnimation extends StatefulWidget {
   @override
@@ -14,6 +15,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
     super.initState();
     page = [
       {'title': 'AnimatedContainer', 'page': AnimatedContainerWidget()},
+      {'title': 'AnimatedCrossFade', 'page': AnimatedCrossFadeWidget()},
     ];
   }
 
@@ -21,7 +23,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('表单 Widgets'),
+        title: Text('动画和Motion'),
         centerTitle: true,
         elevation: 0.0,
       ),
