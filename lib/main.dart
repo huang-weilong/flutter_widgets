@@ -56,12 +56,12 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Stack(
+      color: Colors.white,
+      child: Column(
         children: <Widget>[
-          Image.asset('assets/images/welcome.jpg'),
-          Positioned(
-            bottom: 10.0,
-            right: 10.0,
+          Expanded(child: Image.asset('assets/images/welcome.jpg')),
+          Align(
+            alignment: Alignment.bottomRight,
             child: GestureDetector(
               onTap: () {
                 timer1.cancel();
@@ -69,6 +69,7 @@ class _SplashPageState extends State<SplashPage> {
                 go2HomePage();
               },
               child: Container(
+                margin: EdgeInsets.only(right: 20.0, bottom: 20.0),
                 alignment: Alignment.center,
                 width: 60.0,
                 height: 30.0,
@@ -82,7 +83,7 @@ class _SplashPageState extends State<SplashPage> {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
