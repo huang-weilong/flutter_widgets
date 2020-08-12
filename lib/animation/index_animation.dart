@@ -9,6 +9,7 @@ import 'package:flutter_widgets/animation/animated_opacity_widget.dart';
 import 'package:flutter_widgets/animation/animated_physical_model_widget.dart';
 import 'package:flutter_widgets/animation/animated_positioned_widget.dart';
 import 'package:flutter_widgets/animation/animated_size_widget.dart';
+import 'package:flutter_widgets/animation/animated_widget_widget.dart';
 import 'package:flutter_widgets/animation/decorated_box_transition_widget.dart';
 import 'package:flutter_widgets/animation/fade_transition_widget.dart';
 import 'package:flutter_widgets/animation/hero_widget.dart';
@@ -48,6 +49,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'AnimatedPhysicalModel', 'page': AnimatedPhysicalModelWidget()},
       {'title': 'AnimatedPositioned', 'page': AnimatedPositionedWidget()},
       {'title': 'AnimatedSizeWidget', 'page': AnimatedSizeWidget()},
+      {'title': 'AnimatedWidget', 'page': AnimatedWidgetWidget()},
     ];
   }
 
