@@ -3,6 +3,7 @@ import 'package:flutter_widgets/animation/animated_builder_widget.dart';
 import 'package:flutter_widgets/animation/animated_container_widget.dart';
 import 'package:flutter_widgets/animation/animated_cross_fade_widget.dart';
 import 'package:flutter_widgets/animation/animated_default_textStyle_widget.dart';
+import 'package:flutter_widgets/animation/animated_list_state_widget.dart';
 import 'package:flutter_widgets/animation/decorated_box_transition_widget.dart';
 import 'package:flutter_widgets/animation/fade_transition_widget.dart';
 import 'package:flutter_widgets/animation/hero_widget.dart';
@@ -36,6 +37,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'SizeTransition', 'page': SizeTransitionWidget()},
       {'title': 'SlideTransition', 'page': SlideTransitionWidget()},
       {'title': 'AnimatedDefaultTextStyle', 'page': AnimatedDefaultTextStyleWidget()},
+      {'title': 'AnimatedListState', 'page': AnimatedListStateWidget()},
     ];
   }
 
