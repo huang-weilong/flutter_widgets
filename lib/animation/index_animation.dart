@@ -8,6 +8,7 @@ import 'package:flutter_widgets/animation/hero_widget.dart';
 import 'package:flutter_widgets/animation/positioned_transition_widget.dart';
 import 'package:flutter_widgets/animation/rotation_transition_widget.dart';
 import 'package:flutter_widgets/animation/scale_transition_widget.dart';
+import 'package:flutter_widgets/animation/size_transition_widget.dart';
 
 class IndexAnimation extends StatefulWidget {
   @override
@@ -30,6 +31,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'PositionedTransition', 'page': PositionedTransitionWidget()},
       {'title': 'RotationTransition', 'page': RotationTransitionWidget()},
       {'title': 'ScaleTransition', 'page': ScaleTransitionWidget()},
+      {'title': 'SizeTransition', 'page': SizeTransitionWidget()},
     ];
   }
 
