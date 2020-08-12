@@ -7,6 +7,7 @@ import 'package:flutter_widgets/animation/animated_list_state_widget.dart';
 import 'package:flutter_widgets/animation/animated_modal_barrier_widget.dart';
 import 'package:flutter_widgets/animation/animated_opacity_widget.dart';
 import 'package:flutter_widgets/animation/animated_physical_model_widget.dart';
+import 'package:flutter_widgets/animation/animated_positioned_widget.dart';
 import 'package:flutter_widgets/animation/decorated_box_transition_widget.dart';
 import 'package:flutter_widgets/animation/fade_transition_widget.dart';
 import 'package:flutter_widgets/animation/hero_widget.dart';
@@ -44,6 +45,7 @@ class _IndexAnimationState extends State<IndexAnimation> {
       {'title': 'AnimatedModalBarrier', 'page': AnimatedModalBarrierWidget()},
       {'title': 'AnimatedOpacity', 'page': AnimatedOpacityWidget()},
       {'title': 'AnimatedPhysicalModel', 'page': AnimatedPhysicalModelWidget()},
+      {'title': 'AnimatedPositioned', 'page': AnimatedPositionedWidget()},
     ];
   }
 
