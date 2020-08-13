@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/animation/index_animation.dart';
 import 'package:flutter_widgets/assets_image_icon/index_assets_image_icon.dart';
 import 'package:flutter_widgets/input/index_input.dart';
+import 'package:flutter_widgets/interaction_models/index_interaction_model.dart';
 import 'package:flutter_widgets/text/index_text.dart';
 
 import 'basic/index_basic.dart';
@@ -68,6 +69,12 @@ class _HomePageState extends State<HomePage> {
         'description': '在您的应用中使用动画',
         'image': 'assets/images/8.jpg',
         'page': IndexAnimation(),
+      },
+      {
+        'title': '交互模型',
+        'description': '响应触摸事件并将用户路由到不同的页面视图（View）',
+        'image': 'assets/images/9.jpg',
+        'page': IndexInteractionModel(),
       },
     ];
   }
