@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/interaction_models/absorb_pointer_widget.dart';
 import 'package:flutter_widgets/interaction_models/dismissible_widget.dart';
 import 'package:flutter_widgets/interaction_models/drag_target_widget.dart';
 import 'package:flutter_widgets/interaction_models/gesture_detector_widget.dart';
@@ -23,6 +24,7 @@ class _IndexInteractionModelState extends State<IndexInteractionModel> {
       {'title': 'DragTarget', 'page': DragTargetWidget()},
       {'title': 'Dismissible', 'page': DismissibleWidget()},
       {'title': 'IgnorePointer', 'page': IgnorePointerWidget()},
+      {'title': 'AbsorbPointer', 'page': AbsorbPointerWidget()},
     ];
   }
 
