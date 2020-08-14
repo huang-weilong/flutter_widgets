@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/interaction_models/dismissible_widget.dart';
 import 'package:flutter_widgets/interaction_models/drag_target_widget.dart';
 import 'package:flutter_widgets/interaction_models/gesture_detector_widget.dart';
 import 'package:flutter_widgets/interaction_models/long_press_draggable_widget.dart';
@@ -19,6 +20,7 @@ class _IndexInteractionModelState extends State<IndexInteractionModel> {
       {'title': 'LongPressDraggable', 'page': LongPressDraggableWidget()},
       {'title': 'GestureDetector', 'page': GestureDetectorWidget()},
       {'title': 'DragTarget', 'page': DragTargetWidget()},
+      {'title': 'Dismissible', 'page': DismissibleWidget()},
     ];
   }
 
